@@ -1,258 +1,412 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kwik-E-Mart | Sua Loja de Conveniência</title>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-
+  <body>
     <div class="top-bar">
-        <div class="container-fluid px-4">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="top-bar-links">
-                </div>
-                <div class="top-bar-info">
-                </div>
-            </div>
+      <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="top-bar-links"></div>
+          <div class="top-bar-info"></div>
         </div>
+      </div>
     </div>
 
     <nav class="navbar bg-white py-3 border-bottom">
-    <div class="container-xl d-flex align-items-center gap-3">
-        <button class="navbar-toggler d-md-none border-0" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#mobileMenu">
-            <i class="bi bi-list fs-1"></i>
+      <div class="container-xl d-flex align-items-center gap-3">
+        <button
+          class="navbar-toggler d-md-none border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+        >
+          <i class="bi bi-list fs-1"></i>
         </button>
 
         <a class="navbar-brand m-0 d-flex align-items-center gap-2" href="#">
-            <img class="img-fluid" style="height: 40px;" src="./images/Kwik_E_Mart_logo.png" alt="Logo do Kwik E Mart">
+          <img
+            class="img-fluid"
+            style="height: 40px"
+            src="./images/Kwik_E_Mart_logo.png"
+            alt="Logo do Kwik E Mart"
+          />
         </a>
 
         <form class="flex-grow-1 d-none d-md-block">
-            <div class="input-group">
-                <span class="input-group-text bg-white border-end-0">
-                    <i class="bi bi-search"></i>
-                </span>
-                <input type="text" class="form-control border-start-0" placeholder="Search products...">
-            </div>
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input
+              type="text"
+              class="form-control border-start-0"
+              placeholder="Search products..."
+            />
+          </div>
         </form>
 
         <div class="d-flex align-items-center gap-4 ms-auto">
-            <a href="#" class="text-dark position-relative">
-                <i class="bi bi-heart fs-5"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white" style="font-size: 0.55rem;">0</span>
-            </a>
+          <a href="#" class="text-dark position-relative">
+            <i class="bi bi-heart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
+              style="font-size: 0.55rem"
+              >0</span
+            >
+          </a>
 
-            <a href="#" class="text-dark d-flex align-items-center gap-1">
-                <i class="bi bi-person fs-5"></i>
-                <span class="d-none d-md-inline">Login</span>
-            </a>
+          <a href="#" class="text-dark d-flex align-items-center gap-1">
+            <i class="bi bi-person fs-5"></i>
+            <span class="d-none d-md-inline">Login</span>
+          </a>
 
-            <a href="#" class="text-dark position-relative">
-                <i class="bi bi-cart fs-5"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white" style="font-size: 0.55rem;">0</span>
-            </a>
+          <a href="#" class="text-dark position-relative">
+            <i class="bi bi-cart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
+              style="font-size: 0.55rem"
+              >0</span
+            >
+          </a>
         </div>
-    </div>
+      </div>
 
-    <div class="collapse" id="mobileMenu">
+      <div class="collapse" id="mobileMenu">
         <div class="bg-white border-top py-3">
-            <ul class="nav flex-column gap-2 px-3">
-                <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Marcas</a></li>
-                <hr>
-                <li class="nav-item"><a class="nav-link" href="#">Envios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Newsletter</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-            </ul>
+          <ul class="nav flex-column gap-2 px-3">
+            <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Marcas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Envios</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Newsletter</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
 
-    <div class="container-xl d-none d-md-block">
+      <div class="container-xl d-none d-md-block">
         <ul class="nav justify-content-start gap-4 small fw-semibold pt-2 pb-1">
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Products</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">SALE</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Inspiration</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Brands</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Outlet</a></li>
-            <li class="nav-item ms-auto"><a class="nav-link text-dark" href="#">Shipping</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Returns & Warranty</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Marcas</a>
+          </li>
+          <li class="nav-item"></li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Envios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contato</a>
+          </li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Thank You, Come Again!</h1>
-                <a href="#products" class="btn btn-hero">Compre um Squishee</a>
-            </div>
+    <section
+      class="py-5 text-center text-white position-relative"
+      style="
+        background: url('./images/kwik_e_mart_bg2.webp') center/cover no-repeat;
+        min-height: 380px;
+      "
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background: rgba(0, 0, 0, 0.45)"
+      ></div>
+      <div class="container position-relative">
+        <h1 class="fw-bold">Bem-vindo ao Kwik-E-Mart</h1>
+        <p class="col-lg-6 mx-auto">
+          Produtos icônicos, lanches rápidos e itens curiosos. Navegue à vontade
+          e descubra ofertas rápidas, práticas e cheias de personalidade.
+        </p>
+        <div class="mt-4">
+          <a href="#" class="btn btn-light px-4 py-2 me-2 fw-semibold"
+            >PROMOÇÕES</a
+          >
+          <a href="#" class="btn btn-outline-light px-4 py-2 fw-semibold"
+            >PRODUTOS</a
+          >
         </div>
+      </div>
     </section>
 
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
+              style="height: 200px; cursor: pointer"
+              onmouseover="this.querySelector('img').style.filter='brightness(70%)'; this.querySelector('img').style.transform='scale(1.08)'"
+              onmouseout="this.querySelector('img').style.filter='brightness(50%)'; this.querySelector('img').style.transform='scale(1)'"
+            >
+              <img
+                src="./images/simpsons-bg.jpeg"
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  object-fit: cover;
+                  filter: brightness(50%);
+                  transition: 0.4s;
+                "
+              />
+              <h5 class="position-relative fw-bold">Mais Vendidos</h5>
+            </div>
+          </div>
 
+          <!-- Card 2 -->
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
+              style="height: 200px; cursor: pointer"
+              onmouseover="this.querySelector('img').style.filter='brightness(70%)'; this.querySelector('img').style.transform='scale(1.08)'"
+              onmouseout="this.querySelector('img').style.filter='brightness(50%)'; this.querySelector('img').style.transform='scale(1)'"
+            >
+              <img
+                src="./images/simpsons-bg2.webp"
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  object-fit: cover;
+                  filter: brightness(50%);
+                  transition: 0.4s;
+                "
+              />
+              <h5 class="position-relative fw-bold">Envios</h5>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
+              style="height: 200px; cursor: pointer"
+              onmouseover="this.querySelector('img').style.filter='brightness(70%)'; this.querySelector('img').style.transform='scale(1.08)'"
+              onmouseout="this.querySelector('img').style.filter='brightness(50%)'; this.querySelector('img').style.transform='scale(1)'"
+            >
+              <img
+                src="./images/simpsons-bg3.jpg"
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  object-fit: cover;
+                  filter: brightness(50%);
+                  transition: 0.4s;
+                "
+              />
+              <h5 class="position-relative fw-bold">Produtos</h5>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-6 col-md-3">
+            <div
+              class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
+              style="height: 200px; cursor: pointer"
+              onmouseover="this.querySelector('img').style.filter='brightness(70%)'; this.querySelector('img').style.transform='scale(1.08)'"
+              onmouseout="this.querySelector('img').style.filter='brightness(50%)'; this.querySelector('img').style.transform='scale(1)'"
+            >
+              <img
+                src="./images/simpsons-bg4.jpeg"
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  object-fit: cover;
+                  filter: brightness(50%);
+                  transition: 0.4s;
+                "
+              />
+              <h5 class="position-relative fw-bold">Marcas</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="products-section py-5">
-        <div class="container-fluid px-4">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Produtos</h2>
-
-            </div>
-
-            <div class="row g-4">
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/009A44/FFFFFF?text=Produto" alt="Squishee">
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 1</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/F44336/FFFFFF?text=Produto" alt="Lard Lad Donuts">
-                            <span class="product-badge">Novo</span>
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 2</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/CC0000/FFFFFF?text=Produto" alt="Buzz Cola">
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 3</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/F7931E/2B2B2B?text=Produto" alt="Krusty O's">
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 4</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/8B7355/FFFFFF?text=Produto" alt="Hot Dog">
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 5</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/FF6B35/FFFFFF?text=Produto" alt="Duff Merch">
-                            <span class="product-badge sale">Sale</span>
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 6</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/667eea/FFFFFF?text=Produto"
-                                alt="Radioactive Man Comic">
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 7</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://placehold.co/400x400/764ba2/FFFFFF?text=Produto" alt="Bort License Plate">
-                            <div class="product-overlay">
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-name">Produto 8</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid px-4">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Produtos</h2>
         </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/009A44/FFFFFF?text=Produto"
+                  alt="Squishee"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 1</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/F44336/FFFFFF?text=Produto"
+                  alt="Lard Lad Donuts"
+                />
+                <span class="product-badge">Novo</span>
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 2</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/CC0000/FFFFFF?text=Produto"
+                  alt="Buzz Cola"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 3</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/F7931E/2B2B2B?text=Produto"
+                  alt="Krusty O's"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 4</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/8B7355/FFFFFF?text=Produto"
+                  alt="Hot Dog"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 5</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/FF6B35/FFFFFF?text=Produto"
+                  alt="Duff Merch"
+                />
+                <span class="product-badge sale">Sale</span>
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 6</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/667eea/FFFFFF?text=Produto"
+                  alt="Radioactive Man Comic"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 7</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://placehold.co/400x400/764ba2/FFFFFF?text=Produto"
+                  alt="Bort License Plate"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-name">Produto 8</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="newsletter-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h2 class="newsletter-title">Fique por Dentro</h2>
-                    <p class="newsletter-subtitle">Receba novidades!</p>
-                    <form class="newsletter-form">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Seu e-mail">
-                            <button class="btn btn-newsletter" type="submit">Inscrever-se</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="newsletter-title">Fique por Dentro</h2>
+            <p class="newsletter-subtitle">Receba novidades!</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Seu e-mail"
+                />
+                <button class="btn btn-newsletter" type="submit">
+                  Inscrever-se
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
