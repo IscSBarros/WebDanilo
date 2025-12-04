@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duff Light | Kwik-E-Mart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="top-bar-links"></div>
+          <div class="top-bar-info"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar bg-white py-3 border-bottom">
+      <div class="container-xl d-flex align-items-center gap-3">
+        <button
+          class="navbar-toggler d-md-none border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+        >
+          <i class="bi bi-list fs-1"></i>
+        </button>
+
+        <a class="navbar-brand m-0 d-flex align-items-center gap-2" href="index.html">
+          <img
+            class="img-fluid"
+            style="height: 40px"
+            src="./images/Kwik_E_Mart_logo.png"
+            alt="Logo do Kwik E Mart"
+          />
+        </a>
+
+        <form class="flex-grow-1 d-none d-md-block">
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input
+              type="text"
+              class="form-control border-start-0"
+              placeholder="Search products..."
+            />
+          </div>
+        </form>
+
+        <div class="d-flex align-items-center gap-4 ms-auto">
+          <a href="#" class="text-dark position-relative">
+            <i class="bi bi-heart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
+              style="font-size: 0.55rem"
+              >0</span
+            >
+          </a>
+
+          <a
+            href="login.html"
+            class="text-dark d-flex align-items-center gap-1"
+          >
+            <i class="bi bi-person fs-5"></i>
+            <span class="d-none d-md-inline">Login</span>
+          </a>
+
+          <a href="cart.html" class="text-dark position-relative">
+            <i class="bi bi-cart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
+              style="font-size: 0.55rem"
+              >0</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse" id="mobileMenu">
+        <div class="bg-white border-top py-3">
+          <ul class="nav flex-column gap-2 px-3">
+            <li class="nav-item"><a class="nav-link" href="category.html">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#mais-vendidos">Promoções</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">Marcas</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Envios</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#newsletter">Newsletter</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-xl d-none d-md-block">
+        <ul class="nav justify-content-start gap-4 small fw-semibold pt-2 pb-1">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="category.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="category.html">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="category.html">Marcas</a>
+          </li>
+          <li class="nav-item"></li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="category.html">Envios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#newsletter">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="category.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container py-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb small text-muted">
+          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+          <li class="breadcrumb-item"><a href="category.html" class="text-decoration-none text-muted">Bebidas</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Duff Light</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Product Section -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Product Images -->
+          <div class="col-md-6">
+            <div class="bg-light rounded-3 p-5 mb-3 d-flex align-items-center justify-content-center" style="min-height: 500px;">
+              <img src="./images/duff-light.jpg" alt="Duff Light" class="img-fluid" style="max-height: 400px; mix-blend-mode: multiply;">
+            </div>
+            <div class="row g-2">
+              <div class="col-3">
+                <div class="border rounded-2 p-2 cursor-pointer">
+                  <img src="./images/duff-light.jpg" class="img-fluid" alt="Thumbnail">
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="border rounded-2 p-2 cursor-pointer opacity-50">
+                  <img src="./images/duff-light.jpg" class="img-fluid" alt="Thumbnail">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h1 class="fw-bold mb-0">Duff Light</h1>
+              <button class="btn btn-link text-muted p-0"><i class="bi bi-heart fs-4"></i></button>
+            </div>
+            <p class="text-muted mb-3">Cerveja leve e refrescante, a favorita de Springfield.</p>
+            
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <h2 class="fw-bold mb-0">R$ 21,50</h2>
+              <span class="text-muted text-decoration-line-through">R$ 26,90</span>
+              <span class="badge bg-danger">-20%</span>
+            </div>
+
+            <div class="mb-2 text-warning small">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span class="text-muted ms-2">(12 avaliações)</span>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="mb-4">
+              <label class="form-label fw-bold">Tamanho:</label>
+              <select class="form-select w-auto">
+                <option selected>Lata 350ml</option>
+                <option>Garrafa 600ml</option>
+                <option>Pack 6 Latas</option>
+              </select>
+            </div>
+
+            <div class="d-grid gap-2 mb-4">
+              <button class="btn btn-success btn-lg fw-bold py-3">
+                <i class="bi bi-cart-plus me-2"></i> ADICIONAR AO CARRINHO
+              </button>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 text-success small mb-5">
+              <i class="bi bi-circle-fill" style="font-size: 8px;"></i>
+              <span class="fw-semibold">Disponível em estoque</span>
+              <span class="text-muted ms-auto">Envio em 3-4 dias</span>
+            </div>
+
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="productAccordion">
+              <div class="accordion-item border-top">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#details">
+                    Detalhes do Produto
+                  </button>
+                </h2>
+                <div id="details" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                  <div class="accordion-body text-muted small">
+                    A Duff Light é a versão mais leve da cerveja mais famosa de Springfield. Perfeita para quem quer manter a forma sem abrir mão do sabor único da Duff. Fabricada com os melhores ingredientes (e talvez um pouco de xarope de milho), é a escolha certa para qualquer ocasião.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-top">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#shipping">
+                    Envio e Garantia
+                  </button>
+                </h2>
+                <div id="shipping" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                  <div class="accordion-body text-muted small">
+                    Entregamos em toda Springfield e arredores. Garantia de satisfação ou seu dinheiro de volta (em notas de Itchy & Scratchy).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-top border-bottom">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#reviews">
+                    Avaliações (12)
+                  </button>
+                </h2>
+                <div id="reviews" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                  <div class="accordion-body text-muted small">
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                        <strong>Homer S.</strong>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      </div>
+                      <p class="mb-0">Mmmm... cerveja!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-5 bg-light mt-5">
+      <div class="container">
+        <h3 class="fw-bold mb-4">Você também pode gostar</h3>
+        <div class="row g-4">
+           <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/cerveja_duff.png" alt="Duff" class="d-block mx-auto w-50">
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Cerveja Duff</h5>
+                <p class="text-success fw-bold mb-3">R$ 24,90</p>
+                <a href="#" class="btn btn-success w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/copo_squishee.png" alt="Squishee">
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Squishee</h5>
+                <p class="text-success fw-bold mb-3">R$ 15,90</p>
+                <a href="#" class="btn btn-success w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/donut_homer.png" alt="Donut">
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Lard Lad Donut</h5>
+                <p class="text-success fw-bold mb-3">R$ 28,50</p>
+                <a href="#" class="btn btn-success w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/krusty_burguer.png" alt="Krusty Burger">
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Krusty Burger</h5>
+                <p class="text-success fw-bold mb-3">R$ 32,90</p>
+                <a href="#" class="btn btn-success w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-5 bg-white border-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-2">Ganhe 5% de desconto extra</h3>
+            <p class="text-muted mb-0 small">Assine nossa newsletter mensal. Receba as últimas atualizações de produtos e ofertas especiais direto na sua caixa de entrada.</p>
+          </div>
+          <div class="col-lg-7">
+            <form class="d-flex gap-2">
+              <input type="email" class="form-control form-control-lg bg-light border-0" placeholder="Digite seu e-mail">
+              <button type="submit" class="btn btn-success px-4 fw-bold">INSCREVER-SE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="bg-white pt-5 pb-4 border-top">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Precisa de ajuda?</h6>
+            <a href="#" class="btn btn-success px-4 py-2 small fw-bold">Fale Conosco</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Suporte ao Cliente</h6>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+              <li><a href="#" class="text-decoration-none text-muted">Trocas e Garantia</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Pagamentos</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Envios</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Termos de Serviço</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Política de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Informações Corporativas</h6>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+              <li><a href="#" class="text-decoration-none text-muted">Sobre Nós</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Marcas</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Afiliados</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Investidores</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Cartão Presente</h6>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+              <li><a href="#" class="text-decoration-none text-muted">Comprar Cartão Presente</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Resgatar Cartão</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5 pt-4 align-items-center">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center gap-2">
+               <h6 class="fw-bold mb-0">Localização</h6>
+            </div>
+             <div class="d-flex align-items-center gap-2 mt-2">
+                <img src="https://flagcdn.com/w20/br.png" alt="Bandeira do Brasil" style="width: 20px;">
+                <span class="small text-muted">Brasil</span>
+                <i class="bi bi-caret-down-fill small text-muted"></i>
+             </div>
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <div class="d-flex gap-3 justify-content-md-end">
+              <a href="#" class="text-muted"><i class="bi bi-instagram fs-5"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-facebook fs-5"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-youtube fs-5"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

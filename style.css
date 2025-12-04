@@ -1,4 +1,4 @@
-/* ===== GLOBAL STYLES ===== */
+/* ===== ESTILOS GLOBAIS ===== */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@
 
 :root {
     --primary-color: #009A44;
-    /* Green */
+    /* Verde */
     --secondary-color: #F44336;
-    /* Red */
+    /* Vermelho */
     --accent-color: #FFD90F;
-    /* Simpsons Yellow */
+    /* Amarelo dos Simpsons */
     --dark-color: #1a1a1a;
     --light-bg: #f4f9f4;
-    /* Light green tint */
+    /* Fundo verde claro */
     --text-dark: #2c2c2c;
     --text-light: #6c757d;
     --transition: all 0.3s ease;
@@ -26,7 +26,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== TOP HEADER ===== */
+/* ===== CABEÇALHO SUPERIOR ===== */
 .top-header {
     background: var(--secondary-color);
     color: white;
@@ -56,7 +56,7 @@ body {
     }
 }
 
-/* ===== NAVIGATION ===== */
+/* ===== NAVEGAÇÃO ===== */
 .navbar {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     padding: 15px 0;
@@ -157,7 +157,7 @@ body {
     font-weight: 700;
 }
 
-/* ===== NAVBAR ANIMATION ===== */
+/* ===== ANIMAÇÃO DA NAVBAR ===== */
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -174,7 +174,7 @@ body {
     animation: slideDown 0.6s ease-out;
 }
 
-/* ===== HERO SLIDER ===== */
+/* ===== SLIDER HERO ===== */
 .hero-slider {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 80px 0;
@@ -294,7 +294,7 @@ body {
     }
 }
 
-/* ===== SERVICES SECTION ===== */
+/* ===== SEÇÃO DE SERVIÇOS ===== */
 .services-section {
     background: white;
 }
@@ -333,7 +333,7 @@ body {
     margin: 0;
 }
 
-/* ===== SECTION HEADERS ===== */
+/* ===== CABEÇALHOS DE SEÇÃO ===== */
 .section-header {
     margin-bottom: 50px;
 }
@@ -361,7 +361,7 @@ body {
     color: var(--text-light);
 }
 
-/* ===== PRODUCTS SECTION ===== */
+/* ===== SEÇÃO DE PRODUTOS ===== */
 .products-section {
     background: var(--light-bg);
 }
@@ -483,12 +483,12 @@ body {
     color: var(--accent-color);
 }
 
-/* ===== COLLECTION SECTION ===== */
+/* ===== SEÇÃO DE COLEÇÃO ===== */
 .collection-section {
     background: white;
 }
 
-/* ===== SALE BANNER ===== */
+/* ===== BANNER DE PROMOÇÃO ===== */
 .sale-banner {
     background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
     color: white;
@@ -568,7 +568,7 @@ body {
     font-weight: 700;
 }
 
-/* ===== FOOTER ===== */
+/* ===== RODAPÉ ===== */
 .footer {
     background: var(--dark-color);
     color: rgba(255, 255, 255, 0.8);
@@ -658,76 +658,89 @@ body {
     opacity: 1;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 991px) {
+/* ===== SEÇÃO DE DESCONTOS ===== */
+.discount-card {
+    transition: var(--transition);
+    min-height: 300px;
+}
 
-    /* Ajuste para mobile: Menu empilhado e visível apenas quando ativado */
-    .navbar .container-fluid {
-        flex-direction: row;
-        /* Volta para row para alinhar logo e seta */
-        flex-wrap: wrap;
-        /* Permite que o menu quebre para a próxima linha */
-        align-items: center;
-        justify-content: space-between;
-    }
+.discount-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
 
-    .navbar-brand {
-        margin-bottom: 0;
-    }
+.apu-card {
+    background-color: #054d32;
+}
 
-    /* Estilo da Seta (Label) */
-    .menu-arrow {
-        font-size: 24px;
-        cursor: pointer;
-        padding: 5px;
-        transition: transform 0.3s ease;
-        color: var(--dark-color);
-    }
+.donut-card {
+    background-color: #ff4fa8;
+}
 
-    /* Rotação da seta quando marcado */
-    #menu-toggle:checked+.menu-arrow i {
-        transform: rotate(180deg);
-        display: inline-block;
-        /* Necessário para transform funcionar */
-    }
+.discount-image {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
 
-    /* Menu oculto por padrão */
-    .navbar-menu {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 15px;
-        flex-direction: column;
-        display: none;
-        /* Oculto inicialmente */
-        order: 3;
-        /* Garante que fique abaixo do logo e seta */
-    }
+.navbar-brand {
+    margin-bottom: 0;
+}
 
-    /* Mostra o menu quando o checkbox está marcado */
-    #menu-toggle:checked~.navbar-menu {
-        display: flex;
-        animation: slideDown 0.3s ease-out;
-    }
+/* Estilo da Seta (Label) */
+.menu-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    color: var(--dark-color);
+}
 
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        gap: 10px;
-    }
+/* Rotação da seta quando marcado */
+#menu-toggle:checked+.menu-arrow i {
+    transform: rotate(180deg);
+    display: inline-block;
+    /* Necessário para transform funcionar */
+}
 
-    .nav-link {
-        padding: 10px 0 !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        display: block;
-    }
+/* Menu oculto por padrão */
+.navbar-menu {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    flex-direction: column;
+    display: none;
+    /* Oculto inicialmente */
+    order: 3;
+    /* Garante que fique abaixo do logo e seta */
+}
 
-    .navbar-actions {
-        margin-top: 10px;
-        justify-content: center;
-        width: 100%;
-    }
+/* Mostra o menu quando o checkbox está marcado */
+#menu-toggle:checked~.navbar-menu {
+    display: flex;
+    animation: slideDown 0.3s ease-out;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.nav-link {
+    padding: 10px 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: block;
+}
+
+.navbar-actions {
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+}
 }
 
 @media (max-width: 768px) {
@@ -757,14 +770,27 @@ body {
         border-radius: 50px;
         width: 100%;
     }
+
+    /* Discount Section Mobile */
+    .discount-image {
+        width: 140px;
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+        opacity: 0.8;
+    }
+
+    .discount-card {
+        padding-bottom: 60px !important;
+    }
 }
 
-/* ===== SMOOTH SCROLLING ===== */
+/* ===== ROLAGEM SUAVE ===== */
 html {
     scroll-behavior: smooth;
 }
 
-/* ===== ANIMATIONS ===== */
+/* ===== ANIMAÇÕES ===== */
 .product-card {
     animation: fadeInScale 0.5s ease;
 }
@@ -779,4 +805,19 @@ html {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/* ===== PROMO CARDS ===== */
+.promo-section {
+    background-color: #f8f9fa;
+}
+
+/* ===== FOOTER UPDATES ===== */
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--dark-color);
 }

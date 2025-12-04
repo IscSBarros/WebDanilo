@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho | Kwik-E-Mart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="top-bar-links"></div>
+          <div class="top-bar-info"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar bg-white py-3 border-bottom">
+      <div class="container-xl d-flex align-items-center gap-3">
+        <button
+          class="navbar-toggler d-md-none border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+        >
+          <i class="bi bi-list fs-1"></i>
+        </button>
+
+        <a
+          class="navbar-brand m-0 d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            class="img-fluid"
+            style="height: 40px"
+            src="./images/Kwik_E_Mart_logo.png"
+            alt="Logo do Kwik E Mart"
+          />
+        </a>
+
+        <form class="flex-grow-1 d-none d-md-block">
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input
+              type="text"
+              class="form-control border-start-0"
+              placeholder="Search products..."
+            />
+          </div>
+        </form>
+
+        <div class="d-flex align-items-center gap-4 ms-auto">
+          <a href="#" class="text-dark position-relative">
+            <i class="bi bi-heart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
+              style="font-size: 0.55rem"
+              >0</span
+            >
+          </a>
+
+          <a
+            href="login.html"
+            class="text-dark d-flex align-items-center gap-1"
+          >
+            <i class="bi bi-person fs-5"></i>
+            <span class="d-none d-md-inline">Login</span>
+          </a>
+
+          <a href="cart.html" class="text-dark position-relative">
+            <i class="bi bi-cart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
+              style="font-size: 0.55rem"
+              >3</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse" id="mobileMenu">
+        <div class="bg-white border-top py-3">
+          <ul class="nav flex-column gap-2 px-3">
+            <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Marcas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Envios</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Newsletter</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-xl d-none d-md-block">
+        <ul class="nav justify-content-start gap-4 small fw-semibold pt-2 pb-1">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="category.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Marcas</a>
+          </li>
+          <li class="nav-item"></li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Envios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="breadcrumb-section py-3 bg-light">
+      <div class="container-xl">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Carrinho</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="cart-section py-5">
+      <div class="container-xl">
+        <div class="cart-header text-center mb-5">
+          <h2 class="cart-title">Meu Carrinho</h2>
+          <p class="text-muted">Você tem 3 itens no seu carrinho</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="cart-items">
+              <div class="cart-item">
+                <div class="cart-item-image">
+                  <img
+                    src="./images/copo_squishee.png"
+                    alt="Squishee"
+                  />
+                </div>
+                <div class="cart-item-details">
+                  <h5 class="cart-item-name">Squishee</h5>
+                  <p class="cart-item-description">Bebida congelada icônica</p>
+                  <div class="cart-item-meta">
+                    <span class="text-muted small">Disponível em estoque</span>
+                  </div>
+                </div>
+                <div class="cart-item-quantity">
+                  <div class="quantity-selector">
+                    <input type="number" class="qty-input" value="1" min="1" />
+                  </div>
+                </div>
+                <div class="cart-item-price">
+                  <p class="price mb-0">R$ 15,90</p>
+                </div>
+                <div class="cart-item-remove">
+                  <button class="btn-remove">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <div class="cart-item-image">
+                  <img
+                    src="./images/donut_homer.png"
+                    alt="Lard Lad Donut"
+                  />
+                </div>
+                <div class="cart-item-details">
+                  <h5 class="cart-item-name">Lard Lad Donut</h5>
+                  <p class="cart-item-description">Descrição do produto</p>
+                  <div class="cart-item-meta">
+                    <span class="badge bg-success">Novo</span>
+                  </div>
+                </div>
+                <div class="cart-item-quantity">
+                  <div class="quantity-selector">
+                    <input type="number" class="qty-input" value="2" min="1" />
+                  </div>
+                </div>
+                <div class="cart-item-price">
+                  <p class="price mb-0">R$ 28,50</p>
+                  <p class="old-price mb-0">R$ 35,90</p>
+                </div>
+                <div class="cart-item-remove">
+                  <button class="btn-remove">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <div class="cart-item-image">
+                  <img src="./images/buzz-cola.png" alt="Buzz Cola" />
+                </div>
+                <div class="cart-item-details">
+                  <h5 class="cart-item-name">Buzz Cola</h5>
+                  <p class="cart-item-description">Descrição do produto</p>
+                  <div class="cart-item-meta">
+                    <span class="text-muted small">Disponível em estoque</span>
+                  </div>
+                </div>
+                <div class="cart-item-quantity">
+                  <div class="quantity-selector">
+                    <input type="number" class="qty-input" value="1" min="1" />
+                  </div>
+                </div>
+                <div class="cart-item-price">
+                  <p class="price mb-0">R$ 12,90</p>
+                </div>
+                <div class="cart-item-remove">
+                  <button class="btn-remove">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-actions mt-4">
+              <a href="category.html" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left me-2"></i>Continuar Comprando
+              </a>
+              <button class="btn btn-outline-danger">
+                <i class="bi bi-trash me-2"></i>Limpar Carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="cart-summary">
+              <h4 class="summary-title">Resumo do Pedido</h4>
+
+              <div class="summary-item">
+                <span>Subtotal (3 itens)</span>
+                <span class="fw-bold">R$ 70,20</span>
+              </div>
+
+              <div class="summary-item">
+                <span>Frete</span>
+                <span class="text-success fw-bold">Grátis</span>
+              </div>
+
+              <div class="summary-item">
+                <span>Desconto</span>
+                <span class="text-danger fw-bold">- R$ 7,40</span>
+              </div>
+
+              <hr />
+
+              <div class="summary-total">
+                <span>Total</span>
+                <span class="total-price">R$ 62,80</span>
+              </div>
+
+              <a
+                href="checkout.html"
+                class="btn btn-checkout w-100 text-decoration-none"
+              >
+                <i class="bi bi-lock-fill me-2"></i>Finalizar Compra
+              </a>
+
+              <div class="promo-code mt-4">
+                <h6 class="promo-title">Cupom de Desconto</h6>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Digite seu cupom"
+                  />
+                  <button class="btn btn-outline-secondary">Aplicar</button>
+                </div>
+              </div>
+
+              <div class="payment-methods mt-4">
+                <h6 class="payments-title">Formas de Pagamento</h6>
+                <div class="payment-icons">
+                  <i class="bi bi-credit-card"></i>
+                  <i class="bi bi-credit-card-2-back"></i>
+                  <i class="bi bi-paypal"></i>
+                  <i class="bi bi-bank"></i>
+                </div>
+              </div>
+
+              <div class="shipping-info mt-4">
+                <div class="info-item">
+                  <i class="bi bi-truck"></i>
+                  <div>
+                    <strong>Frete Grátis</strong>
+                    <p class="mb-0 small text-muted">Acima de R$ 100</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-shield-check"></i>
+                  <div>
+                    <strong>Compra Segura</strong>
+                    <p class="mb-0 small text-muted">Certificado SSL</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-arrow-clockwise"></i>
+                  <div>
+                    <strong>Troca Grátis</strong>
+                    <p class="mb-0 small text-muted">Em até 30 dias</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="newsletter-title">Fique por Dentro</h2>
+            <p class="newsletter-subtitle">Receba novidades!</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Seu e-mail"
+                />
+                <button class="btn btn-newsletter" type="submit">
+                  Inscrever-se
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

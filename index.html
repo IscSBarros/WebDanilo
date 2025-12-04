@@ -74,12 +74,15 @@
             >
           </a>
 
-          <a href="#" class="text-dark d-flex align-items-center gap-1">
+          <a
+            href="login.html"
+            class="text-dark d-flex align-items-center gap-1"
+          >
             <i class="bi bi-person fs-5"></i>
             <span class="d-none d-md-inline">Login</span>
           </a>
 
-          <a href="#" class="text-dark position-relative">
+          <a href="cart.html" class="text-dark position-relative">
             <i class="bi bi-cart fs-5"></i>
             <span
               class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
@@ -93,12 +96,12 @@
       <div class="collapse" id="mobileMenu">
         <div class="bg-white border-top py-3">
           <ul class="nav flex-column gap-2 px-3">
-            <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Marcas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Envios</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mais-vendidos">Promoções</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">Marcas</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Envios</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Newsletter</a>
+              <a class="nav-link" href="#newsletter">Newsletter</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
           </ul>
@@ -108,23 +111,23 @@
       <div class="container-xl d-none d-md-block">
         <ul class="nav justify-content-start gap-4 small fw-semibold pt-2 pb-1">
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Produtos</a>
+            <a class="nav-link text-dark" href="category.html">Produtos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Promoções</a>
+            <a class="nav-link text-dark" href="category.html">Promoções</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Marcas</a>
+            <a class="nav-link text-dark" href="category.html">Marcas</a>
           </li>
           <li class="nav-item"></li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Envios</a>
+            <a class="nav-link text-dark" href="category.html">Envios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Newsletter</a>
+            <a class="nav-link text-dark" href="#newsletter">Newsletter</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Contato</a>
+            <a class="nav-link text-dark" href="category.html">Contato</a>
           </li>
         </ul>
       </div>
@@ -151,17 +154,17 @@
           <a href="#" class="btn btn-light px-4 py-2 me-2 fw-semibold"
             >PROMOÇÕES</a
           >
-          <a href="#" class="btn btn-outline-light px-4 py-2 fw-semibold"
+          <a href="category.html" class="btn btn-outline-light px-4 py-2 fw-semibold"
             >PRODUTOS</a
           >
         </div>
       </div>
     </section>
 
-    <section class="py-5">
+    <section id="mais-vendidos" class="py-5">
       <div class="container">
         <div class="row g-4">
-          <!-- Card 1 -->
+          <!-- Cartão 1 -->
           <div class="col-6 col-md-3">
             <div
               class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
@@ -182,7 +185,7 @@
             </div>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Cartão 2 -->
           <div class="col-6 col-md-3">
             <div
               class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
@@ -203,28 +206,30 @@
             </div>
           </div>
 
-          <!-- Card 3 -->
+          <!-- Cartão 3 -->
           <div class="col-6 col-md-3">
-            <div
-              class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
-              style="height: 200px; cursor: pointer"
-              onmouseover="this.querySelector('img').style.filter='brightness(70%)'; this.querySelector('img').style.transform='scale(1.08)'"
-              onmouseout="this.querySelector('img').style.filter='brightness(50%)'; this.querySelector('img').style.transform='scale(1)'"
-            >
-              <img
-                src="./images/simpsons-bg3.jpg"
-                class="position-absolute top-0 start-0 w-100 h-100"
-                style="
-                  object-fit: cover;
-                  filter: brightness(50%);
-                  transition: 0.4s;
-                "
-              />
-              <h5 class="position-relative fw-bold">Produtos</h5>
-            </div>
+            <a href="category.html" class="text-decoration-none">
+              <div
+                class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
+                style="height: 200px; cursor: pointer"
+                onmouseover="this.querySelector('img').style.filter='brightness(70%)'; this.querySelector('img').style.transform='scale(1.08)'"
+                onmouseout="this.querySelector('img').style.filter='brightness(50%)'; this.querySelector('img').style.transform='scale(1)'"
+              >
+                <img
+                  src="./images/simpsons-bg3.jpg"
+                  class="position-absolute top-0 start-0 w-100 h-100"
+                  style="
+                    object-fit: cover;
+                    filter: brightness(50%);
+                    transition: 0.4s;
+                  "
+                />
+                <h5 class="position-relative fw-bold">Produtos</h5>
+              </div>
+            </a>
           </div>
 
-          <!-- Card 4 -->
+          <!-- Cartão 4 -->
           <div class="col-6 col-md-3">
             <div
               class="position-relative d-flex justify-content-center align-items-center text-white rounded overflow-hidden"
@@ -250,22 +255,25 @@
 
     <section class="products-section py-5">
       <div class="container-fluid px-4">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Produtos</h2>
+        <div class="text-start mb-5">
+          <h2 class="section-title">Mais Vendidos</h2>
         </div>
 
         <div class="row g-4">
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/009A44/FFFFFF?text=Produto"
-                  alt="Squishee"
-                />
+                <img src="./images/copo_squishee.png" alt="Squishee" />
                 <div class="product-overlay"></div>
               </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 1</h5>
+
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Squishee</h5>
+
+                <!-- Preço -->
+                <p class="text-success fw-bold mb-3">R$ 15,90</p>
+
+                <a href="cart.html" class="btn btn-success w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -273,15 +281,17 @@
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/F44336/FFFFFF?text=Produto"
-                  alt="Lard Lad Donuts"
-                />
-                <span class="product-badge">Novo</span>
+                <img src="./images/donut_homer.png" alt="Lard Lad Donut" />
                 <div class="product-overlay"></div>
               </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 2</h5>
+
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Lard Lad Donut</h5>
+
+                <!-- Preço -->
+                <p class="text-success fw-bold mb-3">R$ 28,50</p>
+
+                <a href="cart.html" class="btn btn-success w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -289,14 +299,17 @@
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/CC0000/FFFFFF?text=Produto"
-                  alt="Buzz Cola"
-                />
+                <img src="./images/duff-light.jpg" alt="Lard Lad Donut" />
                 <div class="product-overlay"></div>
               </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 3</h5>
+
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Duff Lite</h5>
+
+                <!-- Preço -->
+                <p class="text-success fw-bold mb-3">R$ 21,50</p>
+
+                <a href="product.html" class="btn btn-success w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -304,109 +317,195 @@
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/F7931E/2B2B2B?text=Produto"
-                  alt="Krusty O's"
-                />
+                <img class="d-block mx-auto w-25" src="./images/cerveja_duff.png" alt="Garrafa de Cerveja Duff">
                 <div class="product-overlay"></div>
               </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 4</h5>
+
+              <div class="product-info text-center p-2">
+                <h5 class="product-name mb-1">Garrafa Cerveja Duff</h5>
+
+                <!-- Preço -->
+                <p class="text-success fw-bold mb-3">R$ 24,90</p>
+
+                <a href="cart.html" class="btn btn-success w-100">Comprar</a>
               </div>
             </div>
           </div>
+      </div>
+    </section>
+</div>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/8B7355/FFFFFF?text=Produto"
-                  alt="Hot Dog"
-                />
-                <div class="product-overlay"></div>
+    <!-- Promo Cards Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-5 rounded-3 bg-white h-100 d-flex flex-column justify-content-center position-relative overflow-hidden">
+              <div class="position-relative z-2">
+                <h3 class="fw-bold mb-1">Categoria</h3>
+                <p class="text-uppercase small fw-bold text-muted mb-2">ATÉ</p>
+                <h2 class="display-4 fw-bold mb-2">25%</h2>
+                <p class="mb-4 text-muted">de desconto em produtos da Categoria</p>
+                <a href="#" class="text-dark fw-bold text-decoration-underline small">COMPRE AGORA</a>
               </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 5</h5>
-              </div>
+              <div class="position-absolute top-0 end-0 h-100 w-50 bg-light rounded-start-pill opacity-50" style="transform: skewX(-20deg) translateX(20%);"></div>
             </div>
           </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/FF6B35/FFFFFF?text=Produto"
-                  alt="Duff Merch"
-                />
-                <span class="product-badge sale">Sale</span>
-                <div class="product-overlay"></div>
+          <div class="col-md-6">
+            <div class="p-5 rounded-3 bg-white h-100 d-flex flex-column justify-content-center position-relative overflow-hidden">
+              <div class="position-relative z-2">
+                <h3 class="fw-bold mb-1">Outlet</h3>
+                <p class="text-uppercase small fw-bold text-muted mb-2">ATÉ</p>
+                <h2 class="display-4 fw-bold mb-2">50%</h2>
+                <p class="mb-4 text-muted">de desconto em todos os produtos</p>
+                <a href="#" class="text-dark fw-bold text-decoration-underline small">VER PRODUTOS</a>
               </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 6</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/667eea/FFFFFF?text=Produto"
-                  alt="Radioactive Man Comic"
-                />
-                <div class="product-overlay"></div>
-              </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 7</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://placehold.co/400x400/764ba2/FFFFFF?text=Produto"
-                  alt="Bort License Plate"
-                />
-                <div class="product-overlay"></div>
-              </div>
-              <div class="product-info">
-                <h5 class="product-name">Produto 8</h5>
-              </div>
+              <div class="position-absolute top-0 end-0 h-100 w-50 bg-light rounded-start-pill opacity-50" style="transform: skewX(-20deg) translateX(20%);"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="newsletter-section py-5">
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-5 bg-light border-top">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 class="newsletter-title">Fique por Dentro</h2>
-            <p class="newsletter-subtitle">Receba novidades!</p>
-            <form class="newsletter-form">
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Seu e-mail"
-                />
-                <button class="btn btn-newsletter" type="submit">
-                  Inscrever-se
-                </button>
-              </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-2">Ganhe 5% de desconto extra</h3>
+            <p class="text-muted mb-0 small">Assine nossa newsletter mensal. Receba as últimas atualizações de produtos e ofertas especiais direto na sua caixa de entrada.</p>
+          </div>
+          <div class="col-lg-7">
+            <form class="d-flex gap-2">
+              <input type="email" class="form-control form-control-lg bg-white border-0" placeholder="Digite seu e-mail">
+              <button type="submit" class="btn btn-success px-4 fw-bold">INSCREVER-SE</button>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Ratings Section -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <h6 class="fw-bold mb-2">Nossa Avaliação</h6>
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p class="small text-muted mb-0">Baseado em <a href="#" class="text-muted text-decoration-underline">2303 avaliações</a></p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-warning mb-2 small">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h6 class="fw-bold small mb-1">Ótimo valor e qualidade</h6>
+            <p class="small text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit...</p>
+            <p class="small text-muted mb-0" style="font-size: 0.75rem;">John Doe, 6 dias atrás</p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-warning mb-2 small">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h6 class="fw-bold small mb-1">Design lindo!</h6>
+            <p class="small text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit...</p>
+            <p class="small text-muted mb-0" style="font-size: 0.75rem;">John Doe, 6 dias atrás</p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-warning mb-2 small">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h6 class="fw-bold small mb-1">Exatamente o que eu queria</h6>
+            <p class="small text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit...</p>
+            <p class="small text-muted mb-0" style="font-size: 0.75rem;">John Doe, 6 dias atrás</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chat Button -->
+    <div class="position-fixed bottom-0 end-0 p-4 z-3">
+      <button class="btn btn-success rounded-circle p-0 d-flex align-items-center justify-content-center shadow-lg" style="width: 60px; height: 60px;">
+        <i class="bi bi-chat-fill fs-4"></i>
+      </button>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="bg-white pt-5 pb-4 border-top">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Precisa de ajuda?</h6>
+            <a href="#" class="btn btn-success px-4 py-2 small fw-bold">Fale Conosco</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Suporte ao Cliente</h6>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+              <li><a href="#" class="text-decoration-none text-muted">Trocas e Garantia</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Pagamentos</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Envios</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Termos de Serviço</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Política de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Informações Corporativas</h6>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+              <li><a href="#" class="text-decoration-none text-muted">Sobre Nós</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Marcas</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Afiliados</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Investidores</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3">Cartão Presente</h6>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+              <li><a href="#" class="text-decoration-none text-muted">Comprar Cartão Presente</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Resgatar Cartão</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5 pt-4 align-items-center">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center gap-2">
+               <h6 class="fw-bold mb-0">Localização</h6>
+            </div>
+             <div class="d-flex align-items-center gap-2 mt-2">
+                <img src="https://flagcdn.com/w20/br.png" alt="Bandeira do Brasil" style="width: 20px;">
+                <span class="small text-muted">Brasil</span>
+                <i class="bi bi-caret-down-fill small text-muted"></i>
+             </div>
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <div class="d-flex gap-3 justify-content-md-end">
+              <a href="#" class="text-muted"><i class="bi bi-instagram fs-5"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-facebook fs-5"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-youtube fs-5"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
